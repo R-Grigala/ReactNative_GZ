@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import Map from '../components/Map';
+import TestMap from '../components/TestMap'
 
 // const { height } = Dimensions.get('window');
 
@@ -24,7 +25,9 @@ const MapScreen = () => {
     <View style={styles.container}>
         {/* <Map /> */}
         <View style={styles.content}>
-            <Text style={styles.text}>Hello World!</Text>
+            {/* <Text style={styles.text}>Hello World!</Text> */}
+            <Map />
+            {/* <TestMap /> */}
         </View>
     </View>
   );
