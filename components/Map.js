@@ -18,7 +18,6 @@ const locations = [
 const Map = () => {
   return (
     <MapView 
-        provider={PROVIDER_GOOGLE}
         style={styles.mapview}
         initialRegion={{
         latitude: 42.0186,
@@ -26,6 +25,7 @@ const Map = () => {
         latitudeDelta: 10,
         longitudeDelta: 10,
         }}
+        provider="google" 
         mapType="satellite"
         showsMyLocationButton={true}
         showsUserLocation={true}
@@ -40,9 +40,7 @@ const Map = () => {
 const styles = StyleSheet.create({
 
   mapview: {
-    width: '100%',
-    height: '50%'
-    // ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFillObject,
   },
   });
 
