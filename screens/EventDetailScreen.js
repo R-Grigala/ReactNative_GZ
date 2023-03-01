@@ -1,11 +1,27 @@
 import { View, Text, StyleSheet } from 'react-native'
-import React from 'react'
-import { useRoute } from '@react-navigation/native'
+import React, { useLayoutEffect } from 'react'
+import { useNavigation, useRoute } from '@react-navigation/native'
+import { HeaderBackButton } from '@react-navigation/elements';
 
 const EventDetailScreen = () => {
     const route = useRoute()
+    const navigation = useNavigation()
 
     const { eventId, origin_time, depth, description } =route.params
+
+    useLayoutEffect(() => {
+        navigation.setOptions({
+            headerTitle: "new title",
+            headerLeft: () => (
+                <HeaderBackButton 
+                    tintColor='white'
+                    onPress={() => navigation.goBack()}
+                    style={{paddingRight: 100}}
+                />
+            )
+        })
+    }, [])
+
     return (
         <View style={styles.screen}>
           <Text style={styles.text}>Origin Time : {origin_time}</Text>

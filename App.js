@@ -13,6 +13,7 @@ export default function App() {
   return (
     <NavigationContainer>
       {/* <HomeStack /> */}
+      {/* <MapScreen /> */}
       <MyDrawer />
       <StatusBar style="light" />
     </NavigationContainer>
