@@ -6,7 +6,7 @@ import EventItem from './EventItem'
 const EventList = () => {
 
     const renderItem = ({item}) => {
-        return <EventItem id={item.id} title={item.title} description={item.description} />
+        return <EventItem id={item.id} origin_time={item.origin_time} depth={item.depth} description={item.description}/>
     }
     return (
         <View>

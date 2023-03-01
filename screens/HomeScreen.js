@@ -7,7 +7,7 @@ const HomeScreen = () => {
   const navigation = useNavigation()
   return (
     <View style={styles.screen}>
-      <Text>Hello World</Text>
+      {/* <Text>Hello World</Text> */}
       {/* <Button title="move to detail" onPress={()=> navigation.navigate('Event')}/> */}
       <EventList />
     </View>
