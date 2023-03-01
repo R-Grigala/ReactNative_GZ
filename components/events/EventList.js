@@ -1,11 +1,12 @@
-import { View, Text, FlatList, RefreshControl } from 'react-native'
+import { View, FlatList, RefreshControl } from 'react-native'
 import React from 'react'
 import { DUMMY_DATA } from '../../data/dummy'
+import EventItem from './EventItem'
 
 const EventList = () => {
 
     const renderItem = ({item}) => {
-        return <View style={{padding: 40}}><Text>{item.title}</Text></View>
+        return <EventItem id={item.id} title={item.title} description={item.description} />
     }
     return (
         <View>

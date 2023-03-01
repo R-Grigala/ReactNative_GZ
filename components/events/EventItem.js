@@ -1,12 +1,23 @@
-import { View, Text } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const EventItem = () => {
+const EventItem = ({id, title, description}) => {
   return (
-    <View>
-      <Text>EventItem</Text>
-    </View>
-  )
+    <TouchableOpacity style={styles.card} onPress={()=>{}}>
+      <Text>{title}</Text>
+      <Text>{description}</Text>
+    </TouchableOpacity>
+  );
 }
 
-export default EventItem
+const styles = StyleSheet.create({
+  card: {
+    borderWidth: 1,
+    borderColor: '#c5c5c5',
+    borderRadius: 10,
+    marginVertical: 5,
+    padding: 30,
+  }
+})
+
+export default EventItem;
