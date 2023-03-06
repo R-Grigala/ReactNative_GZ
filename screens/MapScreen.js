@@ -27,7 +27,7 @@ const MapScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style='light' flex="1"/>
-      <Text style={styles.text}>Hello </Text>
+      {/* <Text style={styles.text}>Hello </Text> */}
         {/* <Map /> */}
         <View style={styles.map_content}>
             {/* <Text style={styles.text}>Hello World!</Text> */}
