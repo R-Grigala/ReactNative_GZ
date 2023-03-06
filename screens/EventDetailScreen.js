@@ -7,7 +7,7 @@ const EventDetailScreen = () => {
     const route = useRoute()
     const navigation = useNavigation()
 
-    const { eventId, origin_time, depth, description } =route.params
+    const { eventId, origin_time, ml, depth, description } =route.params
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -25,6 +25,7 @@ const EventDetailScreen = () => {
     return (
         <View style={styles.screen}>
           <Text style={styles.text}>Origin Time : {origin_time}</Text>
+          <Text style={styles.text}>Magnitudes : {ml}</Text>
           <Text style={styles.text}>Depth : {depth}</Text>
           <Text style={styles.description}>Description : {description}</Text>
         </View>
