@@ -7,8 +7,6 @@ const Home = () => {
       <Text>Home Screen</Text>
     </View>
   )
-
-
 }
 
 const styles = StyleSheet.create({

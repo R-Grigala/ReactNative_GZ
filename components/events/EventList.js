@@ -9,7 +9,7 @@ const EventList = () => {
         return <EventItem id={item.id} origin_time={item.origin_time} ml={item.ml} depth={item.depth} description={item.description}/>
     }
     return (
-        <View>
+        <View >
             <FlatList 
                 data={DUMMY_DATA}
                 keyExtractor={item => item.id}

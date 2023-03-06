@@ -40,7 +40,7 @@ const Map = () => {
 const styles = StyleSheet.create({
 
   mapview: {
-    ...StyleSheet.absoluteFillObject,
+    flex:1,
   },
   });
 

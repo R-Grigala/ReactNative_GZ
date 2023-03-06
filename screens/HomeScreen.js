@@ -10,21 +10,23 @@ const HomeScreen = () => {
     <View style={styles.screen}>
       {/* <Text>Hello World</Text> */}
       {/* <Button title="move to detail" onPress={()=> navigation.navigate('Event')}/> */}
-      {/* <Map style={styles.map}/> */}
-      <EventList style={styles.event}/>
+      <Map />
+      <View style={styles.event_screen}>
+        <EventList/>
+      </View>
     </View>
+
   )
 }
 
 const styles = StyleSheet.create({
   screen: {
+    flex: 1,
+    
+  },
+  event_screen :{
+    flex:1,
     padding: 40,
-  },
-  map: {
-    flex:1
-  },
-  event: {
-    flex:1
   }
 })
 
