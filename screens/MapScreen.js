@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView, TextInput } from 'react-native';
-import Map from '../components/Map';
+import Map from '../components/map/Map';
 import TestMap from '../testing/TestMap'
 
 // const { height } = Dimensions.get('window');

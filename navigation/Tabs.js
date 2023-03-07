@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
-import QrCodeScreen from '../screens/QrCodeScreen';
+import About from '../screens/About';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,8 +21,11 @@ export const HomeTabs = () => {
                 if (route.name === 'HomeTabs') {
                     iconName = focused ? 'home' : 'home-outline'
                 }
-                else if (route.name === 'QrCode') {
-                    iconName = focused ? 'qr-code' : 'qr-code-outline'
+                else if (route.name === 'About') {
+                    iconName = focused ? 'list' : 'map-outline'
+                }
+                else if (route.name === '') {
+                    iconName = focused ? 'news' : 'news-outline'
                 }
 
                 return <Ionicons name={iconName} size={focused ? 35: size} color={color} />
@@ -35,7 +38,7 @@ export const HomeTabs = () => {
                 title:'Home'
             }}
             component={HomeScreen} />
-        <Tab.Screen name="QrCode" component={QrCodeScreen} />
+        <Tab.Screen name="About" component={About} />
       </Tab.Navigator>
   );
 }
