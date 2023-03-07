@@ -11,7 +11,6 @@ const EventDetailScreen = () => {
 
     useLayoutEffect(() => {
         navigation.setOptions({
-            headerTitle: "new title",
             headerLeft: () => (
                 <HeaderBackButton 
                     tintColor='white'
