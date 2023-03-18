@@ -18,7 +18,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "config": {
+        "usesStrictContentSecurityPolicy": false
+      },
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
