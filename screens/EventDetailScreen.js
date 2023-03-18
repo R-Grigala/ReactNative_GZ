@@ -7,7 +7,7 @@ const EventDetailScreen = () => {
     const route = useRoute()
     const navigation = useNavigation()
 
-    const { eventId, origin_time, ml, depth, description } =route.params
+    const { eventId, name, description } =route.params
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -23,9 +23,8 @@ const EventDetailScreen = () => {
 
     return (
         <View style={styles.screen}>
-          <Text style={styles.text}>Origin Time : {origin_time}</Text>
-          <Text style={styles.text}>Magnitudes : {ml}</Text>
-          <Text style={styles.text}>Depth : {depth}</Text>
+          <Text style={styles.text}>This is Event Detail Screen For {eventId}</Text>
+          <Text style={styles.text}>{name}</Text>
           <Text style={styles.description}>Description : {description}</Text>
         </View>
     )
@@ -33,13 +32,13 @@ const EventDetailScreen = () => {
     
 const styles = StyleSheet.create({
     screen: {
-    padding: 20,
+        padding: 20,
     },
     text: {
-        fontSize: 15
+        fontSize: 20
     },
     description: {
-        fontSize: 15
+        fontSize: 14
     }
 })
 

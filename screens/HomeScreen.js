@@ -6,10 +6,16 @@ import Map from '../components/map/Map';
 const HomeScreen = () => {
 
   const [data, setData] = useState([])
+  const [refresh, setRefresh] = useState(false)
+
+  const handleRefresh = () => {
+    console.log('refreshing Data ...')
+    setRefresh(prevState => !prevState)
+  }
 
   useEffect(()=> {
     fetchData()
-  },[])
+  },[refresh])
 
   const fetchData = async() =>{
     try {
@@ -33,7 +39,7 @@ const HomeScreen = () => {
       {/* <Button title="move to detail" onPress={()=> navigation.navigate('Event')}/> */}
       {/* <Map /> */}
       <View style={styles.event_screen}>
-        <EventList data={data}/>
+        <EventList data={data} onRefresh={handleRefresh}/>
       </View>
     </View>
 

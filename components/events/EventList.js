@@ -3,7 +3,7 @@ import React from 'react'
 // import { DUMMY_DATA } from '../../data/dummy'
 import EventItem from './EventItem'
 
-const EventList = ({data}) => {
+const EventList = ({data, onRefresh}) => {
 
     const renderItem = ({item}) => {
         return <EventItem id={item.id} name={item.name} description={item.description} qrCode={item.qr_code}/>
@@ -17,7 +17,7 @@ const EventList = ({data}) => {
                 refreshControl = {
                     <RefreshControl
                         refreshing={false}
-                        onRefresh={() => console.log('refreshing...')}
+                        onRefresh={onRefresh}
                     />
                 }
             />
