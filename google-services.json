@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "429380806070",
+    "project_id": "pushnotification-3caa6",
+    "storage_bucket": "pushnotification-3caa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429380806070:android:003ef78827ff4688160d17",
+        "android_client_info": {
+          "package_name": "com.grigala.gamezone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429380806070-a3dofesdq209ens763mnh6rg1cbm343q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grigala.gamezone",
+            "certificate_hash": "b85e99836f4b0951bb3801f19cf4e56fe8b182dd"
+          }
+        },
+        {
+          "client_id": "429380806070-rk95ldmujv02469u7a3tugf295bq2or1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grigala.gamezone",
+            "certificate_hash": "f39b331a20b80d59c5fd9709cc3d9ba55efb089e"
+          }
+        },
+        {
+          "client_id": "429380806070-5mik51bb8oibh4glnlfb5orpd2ce17a6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn4u-nFlQScZvt3mJm3_2tJ4JWnHokrfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429380806070-5mik51bb8oibh4glnlfb5orpd2ce17a6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
