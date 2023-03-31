@@ -8,6 +8,7 @@ import { HomeStack } from "./navigation/Stack";
 import { MyDrawer } from "./navigation/Drawer";
 import { StatusBar } from "expo-status-bar";
 import { Alert, View, StyleSheet, Text } from "react-native";
+import messaging from '@react-native-firebase/messaging';
 
 
 export default function App() {
@@ -74,8 +75,9 @@ export default function App() {
     // </NavigationContainer>
 
     <View style={StyleSheet.container}>
-      <Text>FCM Tutorial Using React Native & Expo</Text>
       <StatusBar style="auto"/>
+      <Text style={{color:'red', margin:80}}>FCM Tutorial Using React Native & Expo</Text>
+      
     </View>
   );
 }
@@ -83,6 +85,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding:80,
     backgroundColor: "#fff",
     alignItems: 'center',
     justifyContent: 'center',
