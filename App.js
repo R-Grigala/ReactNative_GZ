@@ -7,7 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { HomeStack } from "./navigation/Stack";
 import { MyDrawer } from "./navigation/Drawer";
 import { StatusBar } from "expo-status-bar";
-import { Alert, View, StyleSheet } from "react-native";
+import { Alert, View, StyleSheet, Text } from "react-native";
 
 
 export default function App() {
